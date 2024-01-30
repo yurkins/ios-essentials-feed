@@ -16,6 +16,7 @@
 		4F2228C22B6800FC0057529A /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2228C12B6800FC0057529A /* RemoteFeedLoaderTests.swift */; };
 		4F2228C52B680AF70057529A /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2228C42B680AF70057529A /* RemoteFeedLoader.swift */; };
 		4FD327382B692D22000B32FC /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD327372B692D22000B32FC /* HTTPClient.swift */; };
+		4FD3273A2B693A86000B32FC /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD327392B693A86000B32FC /* FeedItemsMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		4F2228C12B6800FC0057529A /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 		4F2228C42B680AF70057529A /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		4FD327372B692D22000B32FC /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		4FD327392B693A86000B32FC /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			children = (
 				4F2228C42B680AF70057529A /* RemoteFeedLoader.swift */,
 				4FD327372B692D22000B32FC /* HTTPClient.swift */,
+				4FD327392B693A86000B32FC /* FeedItemsMapper.swift */,
 			);
 			path = FeedAPI;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				4F2228C52B680AF70057529A /* RemoteFeedLoader.swift in Sources */,
 				4FD327382B692D22000B32FC /* HTTPClient.swift in Sources */,
 				4F2228BF2B67FCDB0057529A /* FeedLoader.swift in Sources */,
+				4FD3273A2B693A86000B32FC /* FeedItemsMapper.swift in Sources */,
 				4F2228BD2B67F3580057529A /* FeedItem.swift in Sources */,
 				4F2228A72B67F32B0057529A /* EssentialFeed.docc in Sources */,
 			);

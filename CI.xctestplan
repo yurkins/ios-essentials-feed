@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "97BEE687-33AF-4C85-97C9-209A0386CB01",
+      "name" : "CI Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:EssentialFeed.xcodeproj",
+        "identifier" : "4FF846492B7BCEBA004F32B3",
+        "name" : "EssentialFeedAPIEndToEndTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:EssentialFeed.xcodeproj",
+        "identifier" : "4F2228AB2B67F32C0057529A",
+        "name" : "EssentialFeedTests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -16,12 +16,22 @@
 		4F2228C52B680AF70057529A /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2228C42B680AF70057529A /* RemoteFeedLoader.swift */; };
 		4F298B0C2B6A2ADB00303B9E /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F298B0B2B6A2ADB00303B9E /* URLSessionHTTPClientTests.swift */; };
 		4F2EBA292B6B7CD20059CAC8 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2EBA282B6B7CD20059CAC8 /* XCTestCase+MemoryLeakTracking.swift */; };
+		4FD310E52B7BC9E3006E4BE1 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD310E42B7BC9E3006E4BE1 /* URLSessionHTTPClient.swift */; };
 		4FD327382B692D22000B32FC /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD327372B692D22000B32FC /* HTTPClient.swift */; };
 		4FD3273A2B693A86000B32FC /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD327392B693A86000B32FC /* FeedItemsMapper.swift */; };
+		4FF8464D2B7BCEBA004F32B3 /* EssentialFeedAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF8464C2B7BCEBA004F32B3 /* EssentialFeedAPIEndToEndTests.swift */; };
+		4FF8464E2B7BCEBA004F32B3 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2228A22B67F32B0057529A /* EssentialFeed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		4F2228AE2B67F32C0057529A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F2228992B67F32B0057529A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F2228A12B67F32B0057529A;
+			remoteInfo = EssentialFeed;
+		};
+		4FF8464F2B7BCEBA004F32B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4F2228992B67F32B0057529A /* Project object */;
 			proxyType = 1;
@@ -41,8 +51,11 @@
 		4F2228C42B680AF70057529A /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		4F298B0B2B6A2ADB00303B9E /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		4F2EBA282B6B7CD20059CAC8 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		4FD310E42B7BC9E3006E4BE1 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		4FD327372B692D22000B32FC /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		4FD327392B693A86000B32FC /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
+		4FF8464A2B7BCEBA004F32B3 /* EssentialFeedAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FF8464C2B7BCEBA004F32B3 /* EssentialFeedAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedAPIEndToEndTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +74,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4FF846472B7BCEBA004F32B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FF8464E2B7BCEBA004F32B3 /* EssentialFeed.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -69,6 +90,7 @@
 			children = (
 				4F2228A42B67F32B0057529A /* EssentialFeed */,
 				4F2228B02B67F32C0057529A /* EssentialFeedTests */,
+				4FF8464B2B7BCEBA004F32B3 /* EssentialFeedAPIEndToEndTests */,
 				4F2228A32B67F32B0057529A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +100,7 @@
 			children = (
 				4F2228A22B67F32B0057529A /* EssentialFeed.framework */,
 				4F2228AC2B67F32C0057529A /* EssentialFeedTests.xctest */,
+				4FF8464A2B7BCEBA004F32B3 /* EssentialFeedAPIEndToEndTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +139,7 @@
 				4F2228C42B680AF70057529A /* RemoteFeedLoader.swift */,
 				4FD327372B692D22000B32FC /* HTTPClient.swift */,
 				4FD327392B693A86000B32FC /* FeedItemsMapper.swift */,
+				4FD310E42B7BC9E3006E4BE1 /* URLSessionHTTPClient.swift */,
 			);
 			path = FeedAPI;
 			sourceTree = "<group>";
@@ -126,6 +150,14 @@
 				4F2EBA282B6B7CD20059CAC8 /* XCTestCase+MemoryLeakTracking.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4FF8464B2B7BCEBA004F32B3 /* EssentialFeedAPIEndToEndTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FF8464C2B7BCEBA004F32B3 /* EssentialFeedAPIEndToEndTests.swift */,
+			);
+			path = EssentialFeedAPIEndToEndTests;
 			sourceTree = "<group>";
 		};
 		4FF862812B69438000756D69 /* FeeedAPI */ = {
@@ -188,6 +220,24 @@
 			productReference = 4F2228AC2B67F32C0057529A /* EssentialFeedTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		4FF846492B7BCEBA004F32B3 /* EssentialFeedAPIEndToEndTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FF846532B7BCEBA004F32B3 /* Build configuration list for PBXNativeTarget "EssentialFeedAPIEndToEndTests" */;
+			buildPhases = (
+				4FF846462B7BCEBA004F32B3 /* Sources */,
+				4FF846472B7BCEBA004F32B3 /* Frameworks */,
+				4FF846482B7BCEBA004F32B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FF846502B7BCEBA004F32B3 /* PBXTargetDependency */,
+			);
+			name = EssentialFeedAPIEndToEndTests;
+			productName = EssentialFeedAPIEndToEndTests;
+			productReference = 4FF8464A2B7BCEBA004F32B3 /* EssentialFeedAPIEndToEndTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +252,9 @@
 						CreatedOnToolsVersion = 15.2;
 					};
 					4F2228AB2B67F32C0057529A = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					4FF846492B7BCEBA004F32B3 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -221,6 +274,7 @@
 			targets = (
 				4F2228A12B67F32B0057529A /* EssentialFeed */,
 				4F2228AB2B67F32C0057529A /* EssentialFeedTests */,
+				4FF846492B7BCEBA004F32B3 /* EssentialFeedAPIEndToEndTests */,
 			);
 		};
 /* End PBXProject section */
@@ -240,6 +294,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4FF846482B7BCEBA004F32B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -247,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FD310E52B7BC9E3006E4BE1 /* URLSessionHTTPClient.swift in Sources */,
 				4F2228C52B680AF70057529A /* RemoteFeedLoader.swift in Sources */,
 				4FD327382B692D22000B32FC /* HTTPClient.swift in Sources */,
 				4F2228BF2B67FCDB0057529A /* FeedLoader.swift in Sources */,
@@ -266,6 +328,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4FF846462B7BCEBA004F32B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FF8464D2B7BCEBA004F32B3 /* EssentialFeedAPIEndToEndTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -273,6 +343,11 @@
 			isa = PBXTargetDependency;
 			target = 4F2228A12B67F32B0057529A /* EssentialFeed */;
 			targetProxy = 4F2228AE2B67F32C0057529A /* PBXContainerItemProxy */;
+		};
+		4FF846502B7BCEBA004F32B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F2228A12B67F32B0057529A /* EssentialFeed */;
+			targetProxy = 4FF8464F2B7BCEBA004F32B3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -487,7 +562,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.essential.im.EssentialFeedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -508,10 +584,56 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.essential.im.EssentialFeedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4FF846512B7BCEBA004F32B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9Z8WZDMME;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.essential.im.EssentialFeedAPIEndToEndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4FF846522B7BCEBA004F32B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9Z8WZDMME;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.essential.im.EssentialFeedAPIEndToEndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -541,6 +663,15 @@
 			buildConfigurations = (
 				4F2228BA2B67F32C0057529A /* Debug */,
 				4F2228BB2B67F32C0057529A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FF846532B7BCEBA004F32B3 /* Build configuration list for PBXNativeTarget "EssentialFeedAPIEndToEndTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FF846512B7BCEBA004F32B3 /* Debug */,
+				4FF846522B7BCEBA004F32B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

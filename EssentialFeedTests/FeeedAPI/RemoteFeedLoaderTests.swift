@@ -64,7 +64,7 @@ final class RemoteFeedLoaderTests: XCTestCase {
     func test_load_deliversNoItemsOn200HTTPResponseWithEmptyJSONList() {
         let (sut, client) = makeSUT()
         
-        expect(sut, toCompleteWith: .succes([])) {
+        expect(sut, toCompleteWith: .success([])) {
             let emptyJSONList = makeItemsJSON([])
             client.complete(withStatusCode: 200, data: emptyJSONList)
         }
@@ -85,7 +85,7 @@ final class RemoteFeedLoaderTests: XCTestCase {
         
         let items = [item1.model, item2.model]
         
-        expect(sut, toCompleteWith: .succes(items)) {
+        expect(sut, toCompleteWith: .success(items)) {
             let json = makeItemsJSON([item1.json, item2.json])
             client.complete(withStatusCode: 200, data: json)
         }
@@ -144,7 +144,7 @@ final class RemoteFeedLoaderTests: XCTestCase {
         let exp = expectation(description: "Wait for load completion")
         sut.load { receivedResults in
             switch (receivedResults, expectedResult) {
-            case let (.succes(receivedItems), .succes(expectedItems)):
+            case let (.success(receivedItems), .success(expectedItems)):
                 XCTAssertEqual(receivedItems, expectedItems, file: file, line: line)
             case let (.failure(receivedError as RemoteFeedLoader.Error), .failure(expectedError as RemoteFeedLoader.Error)):
                 XCTAssertEqual(receivedError, expectedError, file: file, line: line)

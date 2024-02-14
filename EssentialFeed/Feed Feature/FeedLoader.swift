@@ -8,7 +8,7 @@
 import Foundation
 
 public enum LoadFeedResult {
-    case succes([FeedItem])
+    case success([FeedItem])
     case failure(Error)
 }
 

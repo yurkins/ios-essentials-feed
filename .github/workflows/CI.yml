@@ -12,13 +12,13 @@ on:
 jobs:
   build-and-test:
 
-    runs-on: macos-latest
+    runs-on: macos-14-large
 
     steps:
     - uses: actions/checkout@v3
 
     - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode.app
+      run: sudo xcode-select -switch /Applications/Xcode_15.2.app
 
     - name: Build and test
       run: xcodebuild clean build test -project EssentialsFeed/EssentialsFeed.xcodeproj -scheme "CI"
